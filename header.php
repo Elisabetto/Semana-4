@@ -7,6 +7,18 @@
     <?php wp_head(); ?>
 </head>
 <body>
-    <h1><?php bloginfo( 'name' ); ?></h1>
-    <h2><?php bloginfo( 'description' ); ?></h2>
+    <header>
+        <h1><?php bloginfo( 'name' ); ?></h1>
+        <h2><?php bloginfo( 'description' ); ?></h2>
+
+        <nav>
+            <?php
+            wp_nav_menu( array(
+                'theme_location' => 'principal'
+            ));
+            ?>
+
+        </nav>
+        
+    </header>
 </body>

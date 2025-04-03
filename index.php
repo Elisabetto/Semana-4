@@ -7,7 +7,7 @@ if ( have_posts() ) :
         
     endwhile;
 else :
-    _e( 'Lo sentimos, no se encontraron publicaciones que coincidan con tu criterio', 'textdomain' );
+    echo '<p>' . __( 'Lo sentimos, no se encontraron publicaciones que coincidan con tu criterio' ) . '</p>';
 endif;
 
 get_footer();
