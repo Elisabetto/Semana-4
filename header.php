@@ -9,12 +9,13 @@
 <body>
     <header>
         <h1><?php bloginfo( 'name' ); ?></h1>
-        <h2><?php bloginfo( 'description' ); ?></h2>
 
-        <nav>
+        <nav class="menu-seccion">
             <?php
             wp_nav_menu( array(
-                'theme_location' => 'principal'
+                'theme_location' => 'principal',
+                'container' => false,
+                'menu_class' => 'menu-seccion'
             ));
             ?>
 

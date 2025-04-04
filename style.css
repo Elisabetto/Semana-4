@@ -1,6 +1,6 @@
 /*
 Theme Name: Tema Semana 3
-Theme URI:
+Theme URI: 
 Author: Elisabet Torres Vivanco
 Author URI:
 Description: Tema personalizado para un la semana 3 de la práctica.
@@ -9,3 +9,158 @@ License: GPL-2.0-or-later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: tema_semana3
 Tags: restaurante, comida, personalizado.
+*/
+
+header {
+    background-color: #f0e8e8;
+    padding: 20px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: rgb(0, 0, 0);
+    font-size: 2.5rem;
+    padding: 15px 0;
+    text-align: center;
+    margin: 0;
+}
+
+h2 {
+    margin: 0 0 15px 0;
+    color: rgb(65, 42, 42);
+    font-size: 36px;
+    text-align: center;
+    padding: 10px;
+}
+
+.menu-seccion {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(156, 123, 129);
+    padding: 3px 0;
+    margin: 0;
+}
+
+.menu-seccion a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    padding: 10px;
+}
+
+
+.front-page-imagen {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.contenido-box p {
+    color: black;
+    font-size: 18px;
+    line-height: 1.8;
+    text-align: center;
+}
+
+.contenido-box {
+    background-color: #f0e8e8;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+}
+
+.main-seccion h3 {
+    margin: 0 0 15px 0;
+    color: rgb(43, 43, 43);
+    font-size: 25px;
+}
+
+.list-seccion {
+    margin: 0 0 15px 0;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.list-seccion a {
+    text-decoration: none;
+    color: #333;
+}
+
+.sidebar-seccion {
+    flex: 0 0 28%;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    width: 100%;
+}
+
+.contacto-seccion {
+    padding: 40px;
+    text-align: center;
+    background-color: #f0e8e8;
+    margin-top: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form p {
+    margin-bottom: 20px;
+}
+
+form label {
+    display: block;
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+form button {
+    background-color: #7c6364;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #464646;
+    color: #fff;
+    text-align: center;
+    font-size: 15px;
+    margin-top: 30px;
+    padding: 3px;
+}
+
+footer .footer-contact p {
+    margin: 5px 0;
+}
+
+footer .footer-contact a {
+    color: #fff;
+    text-decoration: none;
+}

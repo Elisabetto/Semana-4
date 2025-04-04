@@ -2,17 +2,11 @@
 
 add_theme_support( 'title-tag' );
 
-if ( ! isset( $content_width ) ) {
-	$content_width = 800; 
-}
-
 if ( ! function_exists( 'tema_semana3_setup' ) ) :
 
 	function tema_semana3_setup() {
 
 		add_theme_support( 'post-thumbnails' );
-
-		add_theme_support( 'post-formats', array( 'aside', 'gallery', 'quote', 'image' ) );
 
 		register_nav_menus( array(
 			'principal' =>__( 'Menú principal', 'tema_semana3' ),
@@ -27,6 +21,8 @@ if ( ! function_exists( 'tema_semana3_setup' ) ) :
 			'after_title'	=> '</h3>',
 
 		));
+
+		wp_enqueue_style( 'tema_semana3-style', get_stylesheet_uri() );
 	}
 endif;
 

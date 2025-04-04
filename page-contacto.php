@@ -3,9 +3,8 @@ get_header();
 ?>
 
 <div class="contacto-seccion">
-    <h1>Contacto</h1>
+    <h2>Contacto</h2>
 
-    //Formulario de contacto
     <form action="<?php echo esc_url($_SERVER['REQUEST_URI']); ?>" method="post">
         <p>
             <label for="nombre">Nombre Completo</label>
