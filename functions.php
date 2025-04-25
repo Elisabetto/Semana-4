@@ -27,4 +27,21 @@ if ( ! function_exists( 'tema_semana3_setup' ) ) :
 endif;
 
 add_action( 'after_setup_theme', 'tema_semana3_setup' );
+
+function proyectos_cpt() {
+    register_post_type( 'proyectos', array(
+        'label'  => 'Proyectos',
+        'public' => true,
+		'has_archive' => true,
+		'rewrite'     => array('slug' => 'proyectos'),
+        'supports' => array(
+            'title',         // Título
+            'editor',        // Contenido
+            'thumbnail',     // Imagen destacada
+            'custom-fields'  // Campos personalizados
+        ),
+    ) );
+}
+add_action( 'init', 'proyectos_cpt' );
+
 ?>
